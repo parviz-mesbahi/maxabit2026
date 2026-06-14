@@ -1,0 +1,39 @@
+{
+    "image": "images/hero_ai_01.jpg",
+    "tag": "KI-gestützte Webentwicklung",
+    "headline": "Websites, die<br>wirklich wirken<br>— und Spaß<br>machen",
+    "sub": "Wir bauen <strong>schnelle, moderne Websites</strong>, die Ihre Kunden begeistern und Ihr Geschäft voranbringen — mit KI-Power und deutschem Qualitätsanspruch. Mit Alina",
+    "cta_primary": {
+        "label": "Projekt starten",
+        "href": "#kontakt"
+    },
+    "cta_secondary": {
+        "label": "Leistungen ansehen",
+        "href": "#leistungen"
+    },
+    "trust": {
+        "avatars": [
+            "MK",
+            "SR",
+            "JP",
+            "LF"
+        ],
+        "count": "50+ zufriedene Kunden",
+        "rating": "⭐⭐⭐⭐⭐ Durchschnittlich 4,9 / 5"
+    },
+    "screen_url": "maxabit.de/mein-projekt",
+    "chips": [
+        {
+            "color": "sky",
+            "icon": "<polyline points=\"22 12 18 12 15 21 9 3 6 12 2 12\"/>",
+            "label": "Performance Score",
+            "sub": "98 / 100 — Lighthouse"
+        },
+        {
+            "color": "mint",
+            "icon": "<path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/>",
+            "label": "SSL gesichert",
+            "sub": "DSGVO-konform"
+        }
+    ]
+}

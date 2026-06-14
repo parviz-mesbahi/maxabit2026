@@ -1,0 +1,4 @@
+# Sensible Dateien nie ausliefern
+<FilesMatch "^\.env|^\.htpasswd">
+    Require all denied
+</FilesMatch>

@@ -1,0 +1,46 @@
+{
+  "logo": {
+    "name":   "MaxaBit",
+    "suffix": "IT-Solutions",
+    "href":   "#"
+  },
+  "brand_text": "Wir bauen Websites, die wirklich wirken — mit Leidenschaft, KI-Power und deutschem Qualitätsanspruch.",
+  "badge": "KI-zertifiziert",
+  "cols": [
+    {
+      "title": "Leistungen",
+      "links": [
+        { "label": "Corporate Website", "href": "#" },
+        { "label": "Online Shop",       "href": "#" },
+        { "label": "KI-Integration",    "href": "#" },
+        { "label": "SEO / Marketing",   "href": "#" },
+        { "label": "Hosting",           "href": "#" }
+      ]
+    },
+    {
+      "title": "Unternehmen",
+      "links": [
+        { "label": "Über uns",  "href": "#" },
+        { "label": "Portfolio", "href": "#" },
+        { "label": "Blog",      "href": "#" },
+        { "label": "Karriere",  "href": "#" },
+        { "label": "Kontakt",   "href": "#" }
+      ]
+    },
+    {
+      "title": "Rechtliches",
+      "links": [
+        { "label": "Impressum",         "href": "#" },
+        { "label": "Datenschutz",       "href": "#" },
+        { "label": "AGB",               "href": "#" },
+        { "label": "Cookie-Richtlinie", "href": "#" }
+      ]
+    }
+  ],
+  "copy": "© 2026 MaxaBit IT-Solutions. Alle Rechte vorbehalten.",
+  "bottom_links": [
+    { "label": "Impressum",   "href": "#" },
+    { "label": "Datenschutz", "href": "#" },
+    { "label": "AGB",         "href": "#" }
+  ]
+}

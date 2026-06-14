@@ -1,0 +1,320 @@
+{
+    "meta": {
+        "title": "MaxaBit IT-Solutions XX – Websites, die wirklich wirken"
+    },
+    "logos": {
+        "label": "Vertrauen von Unternehmen aus verschiedenen Branchen",
+        "items": [
+            "Handwerk",
+            "Gastronomie",
+            "Immobilien",
+            "E-Commerce",
+            "Beratung",
+            "Gesundheit",
+            "Bildung"
+        ]
+    },
+    "how": {
+        "section_label": "Wie es funktioniert",
+        "headline": "Von der Idee zur <em>fertigen Website</em> in Rekordzeit",
+        "sub": "Unser bewährter Prozess bringt Ihr Projekt schnell und zuverlässig ans Ziel.",
+        "steps": [
+            {
+                "num": "01",
+                "title": "Erstgespräch",
+                "text": "Wir besprechen Ihre Ziele, Zielgruppe und Wünsche in einem kostenlosen 30-Minuten-Call.",
+                "icon": "<path d=\"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z\"/>"
+            },
+            {
+                "num": "02",
+                "title": "Design & Konzept",
+                "text": "Wir erstellen ein individuelles Design-Konzept, das Ihre Marke perfekt repräsentiert.",
+                "icon": "<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><path d=\"M3 9h18M9 21V9\"/>"
+            },
+            {
+                "num": "03",
+                "title": "Umsetzung",
+                "text": "Unser Team setzt Ihr Projekt mit modernsten Technologien und KI-Unterstützung um.",
+                "icon": "<polyline points=\"16 18 22 12 16 6\"/><polyline points=\"8 6 2 12 8 18\"/>"
+            },
+            {
+                "num": "04",
+                "title": "Launch & Support",
+                "text": "Nach dem Launch begleiten wir Sie weiterhin mit Pflege, Updates und Optimierungen.",
+                "icon": "<polyline points=\"20 6 9 17 4 12\"/>"
+            }
+        ]
+    },
+    "services": {
+        "section_label": "Was wir für Sie bauen",
+        "headline": "Maßgeschneiderte <em>Lösungen</em> für jeden Bedarf",
+        "sub": "Von der einfachen Visitenkarte bis zum komplexen E-Commerce-System.",
+        "items": [
+            {
+                "color": "c-sky",
+                "badge_class": "badge-blue",
+                "badge": "Webdesign",
+                "icon_class": "sky",
+                "icon": "<rect x=\"2\" y=\"3\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M8 21h8M12 17v4\"/>",
+                "title": "Corporate Website",
+                "text": "Professionelle Unternehmenswebsites, die Vertrauen aufbauen und Kunden überzeugen.",
+                "features": [
+                    "Responsives Design",
+                    "CMS-Integration",
+                    "SEO-Optimierung"
+                ]
+            },
+            {
+                "color": "c-coral",
+                "badge_class": "badge-coral",
+                "badge": "E-Commerce",
+                "icon_class": "coral",
+                "icon": "<path d=\"M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z\"/><line x1=\"3\" y1=\"6\" x2=\"21\" y2=\"6\"/><path d=\"M16 10a4 4 0 0 1-8 0\"/>",
+                "title": "Online Shop",
+                "text": "Leistungsstarke Online-Shops, die verkaufen — mit intuitivem Checkout und hoher Conversion.",
+                "features": [
+                    "WooCommerce / Shopify",
+                    "Zahlungsintegration",
+                    "Lager-Management"
+                ]
+            },
+            {
+                "color": "c-mint",
+                "badge_class": "badge-mint",
+                "badge": "Marketing",
+                "icon_class": "mint",
+                "icon": "<polyline points=\"22 12 18 12 15 21 9 3 6 12 2 12\"/>",
+                "title": "Wachstumsstrategie",
+                "text": "Datengetriebene Marketing-Strategien, die echtes Wachstum liefern und messbar sind.",
+                "features": [
+                    "SEO & Content",
+                    "Google Ads",
+                    "Analytics-Setup"
+                ]
+            },
+            {
+                "color": "c-purple",
+                "badge_class": "badge-purple",
+                "badge": "Wartung",
+                "icon_class": "purple",
+                "icon": "<path d=\"M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z\"/>",
+                "title": "Pflege & Wartung",
+                "text": "Zuverlässige Pflege Ihrer Website — damit Sie sich auf Ihr Kerngeschäft konzentrieren können.",
+                "features": [
+                    "Regelmäßige Updates",
+                    "Backup & Security",
+                    "Performance-Checks"
+                ]
+            },
+            {
+                "color": "c-yellow",
+                "badge_class": "badge-yellow",
+                "badge": "KI-Integration",
+                "icon_class": "yellow",
+                "icon": "<path d=\"M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 0 2h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1 0-2h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z\"/>",
+                "title": "KI-Integrationen",
+                "text": "Intelligente Funktionen wie Chatbots, Empfehlungssysteme und automatisierte Prozesse.",
+                "features": [
+                    "KI-Chatbot",
+                    "Automatisierung",
+                    "Personalisierung"
+                ]
+            },
+            {
+                "color": "c-pink",
+                "badge_class": "badge-pink",
+                "badge": "Hosting",
+                "icon_class": "pink",
+                "icon": "<rect x=\"2\" y=\"2\" width=\"20\" height=\"8\" rx=\"2\"/><rect x=\"2\" y=\"14\" width=\"20\" height=\"8\" rx=\"2\"/><line x1=\"6\" y1=\"6\" x2=\"6.01\" y2=\"6\"/><line x1=\"6\" y1=\"18\" x2=\"6.01\" y2=\"18\"/>",
+                "title": "Hosting & Domain",
+                "text": "Schnelles, sicheres Hosting in deutschen Rechenzentren mit 99,9 % Uptime-Garantie.",
+                "features": [
+                    "Deutsche Server",
+                    "SSL inklusive",
+                    "DSGVO-konform"
+                ]
+            }
+        ]
+    },
+    "ai": {
+        "card_label": "KI-Power",
+        "card_title": "Menschliche Kreativität<br>+ KI-Effizienz",
+        "card_image": "images/hero.jpg",
+        "progress": [
+            {
+                "label": "Entwicklungsgeschwindigkeit",
+                "value": "92%",
+                "bar_class": "w92"
+            },
+            {
+                "label": "Design-Qualität",
+                "value": "88%",
+                "bar_class": "w88"
+            },
+            {
+                "label": "Kundenzufriedenheit",
+                "value": "75%",
+                "bar_class": "w75"
+            }
+        ],
+        "floaters": [
+            {
+                "color": "sky",
+                "text": "Automatische Code-Optimierung",
+                "val": "aktiv"
+            },
+            {
+                "color": "coral",
+                "text": "KI-Texte generiert",
+                "val": "2.847"
+            },
+            {
+                "color": "mint",
+                "text": "Performance-Score Ø",
+                "val": "97/100"
+            }
+        ],
+        "section_label": "Künstliche Intelligenz",
+        "headline": "Smarter entwickeln,<br>schneller <em>liefern</em>",
+        "sub": "Wir kombinieren menschliche Kreativität mit der Kraft moderner KI-Tools. Das Ergebnis: <strong>bessere Ergebnisse in kürzerer Zeit</strong> — ohne Abstriche bei der Qualität.",
+        "side_cards": [
+            {
+                "icon": "<circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 8v4l3 3\"/>",
+                "label": "50% schnellere Lieferung",
+                "sub": "Durch KI-gestützte Entwicklungstools"
+            },
+            {
+                "icon": "<path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/>",
+                "label": "Höchste Sicherheitsstandards",
+                "sub": "DSGVO-konform, SSL, tägliche Backups"
+            },
+            {
+                "icon": "<polyline points=\"22 12 18 12 15 21 9 3 6 12 2 12\"/>",
+                "label": "Messbare Ergebnisse",
+                "sub": "Analytics, Reporting, Conversion-Tracking"
+            }
+        ],
+        "pills": [
+            "GPT-4 Integration",
+            "Auto-SEO",
+            "Bildoptimierung",
+            "Code-Review KI",
+            "A/B-Testing",
+            "Live-Chat Bot"
+        ],
+        "cta": {
+            "label": "KI-Demo anfragen",
+            "href": "#kontakt"
+        }
+    },
+    "pricing": {
+        "section_label": "Unsere Preise",
+        "headline": "Klare Preise, <em>kein Kleingedrucktes</em>",
+        "sub": "Transparente Pakete ohne versteckte Kosten. Einmalig oder als monatliches Abo.",
+        "plans": [
+            {
+                "featured": false,
+                "tag_class": "ptag-default",
+                "tag": "Starter",
+                "name": "Einsteiger",
+                "desc": "Perfekt für Freiberufler und kleine Unternehmen mit klarem Fokus.",
+                "price": "500",
+                "price_suffix": "",
+                "period": "Einmalige Investition",
+                "features": [
+                    "5-seitige Website",
+                    "Responsives Design",
+                    "Kontaktformular",
+                    "SSL-Zertifikat",
+                    "1 Monat Support"
+                ],
+                "cta_class": "pcta-default",
+                "cta": "Jetzt anfragen",
+                "cta_href": "#kontakt"
+            },
+            {
+                "featured": true,
+                "tag_class": "ptag-featured",
+                "tag": "Beliebt",
+                "name": "Wachstum",
+                "desc": "Für Unternehmen, die online wachsen und mehr Kunden gewinnen wollen.",
+                "price": "1.500",
+                "price_suffix": "",
+                "period": "Einmalige Investition",
+                "features": [
+                    "Bis zu 15 Seiten",
+                    "KI-Texterstellung",
+                    "SEO-Optimierung",
+                    "CMS-System",
+                    "3 Monate Support",
+                    "Google Analytics"
+                ],
+                "cta_class": "pcta-featured",
+                "cta": "Jetzt starten",
+                "cta_href": "#kontakt"
+            },
+            {
+                "featured": false,
+                "tag_class": "ptag-default",
+                "tag": "Premium",
+                "name": "MaxaBit",
+                "desc": "Die Komplettlösung für ambitionierte Unternehmen mit großen Zielen.",
+                "price": "ab 6.000",
+                "price_suffix": "+",
+                "period": "Ab diesem Betrag",
+                "features": [
+                    "Unbegrenzte Seiten",
+                    "E-Commerce-Shop",
+                    "KI-Chatbot",
+                    "Custom Entwicklung",
+                    "12 Monate Support",
+                    "Performance-Garantie"
+                ],
+                "cta_class": "pcta-default",
+                "cta": "Individuell anfragen",
+                "cta_href": "#kontakt"
+            }
+        ]
+    },
+    "testimonials": {
+        "section_label": "Kundenstimmen",
+        "headline": "Was unsere <em>Kunden sagen</em>",
+        "sub": "Echte Ergebnisse, echte Menschen — über 50 erfolgreiche Projekte.",
+        "items": [
+            {
+                "av_class": "av-1",
+                "initials": "MK",
+                "name": "Markus K.",
+                "role": "Inhaber, Schreinerei Kellner",
+                "text": "MaxaBit IT-Solutions hat unsere Website komplett neu aufgestellt. Innerhalb von 3 Monaten haben wir 40% mehr Anfragen erhalten. Absolut empfehlenswert!"
+            },
+            {
+                "av_class": "av-2",
+                "initials": "SR",
+                "name": "Sandra R.",
+                "role": "Geschäftsführerin, Mode-Boutique",
+                "text": "Professionell, pünktlich und das Ergebnis übertrifft unsere Erwartungen bei weitem. Der neue Shop läuft perfekt und die Conversion-Rate ist gestiegen."
+            },
+            {
+                "av_class": "av-3",
+                "initials": "JP",
+                "name": "Jonas P.",
+                "role": "CTO, TechSolutions GmbH",
+                "text": "Die KI-Integration für unseren Kundendienst hat alles verändert. Wir sparen 10 Stunden pro Woche und unsere Kunden sind begeistert vom schnellen Support."
+            }
+        ]
+    },
+    "cta": {
+        "section_label": "Bereit loszulegen?",
+        "headline": "Bereit für Ihre neue<br><em>digitale Präsenz?</em>",
+        "sub": "Lassen Sie uns gemeinsam Ihre Vision verwirklichen. Das erste Gespräch ist kostenlos und unverbindlich.",
+        "primary": {
+            "label": "Kostenloses Gespräch buchen",
+            "href": "mailto:hallo@maxabit.de"
+        },
+        "ghost": {
+            "label": "Direkt anrufen",
+            "href": "tel:+4912345678"
+        }
+    }
+}

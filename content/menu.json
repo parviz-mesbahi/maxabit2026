@@ -1,0 +1,15 @@
+{
+  "logo": {
+    "name":   "MaxaBit",
+    "suffix": "IT-Solutions",
+    "href":   "#"
+  },
+  "links": [
+    { "label": "Leistungen",   "href": "#leistungen" },
+    { "label": "KI-Funktionen","href": "#ki"         },
+    { "label": "Preise",       "href": "#preise"     },
+    { "label": "Kontakt",      "href": "#kontakt"    }
+  ],
+  "cta_ghost":   { "label": "Anmelden",          "href": "admin/login.php" },
+  "cta_primary": { "label": "Kostenlos starten", "href": "#kontakt" }
+}
