@@ -1,9 +1,2 @@
 Options -Indexes
-
-AuthType Basic
-AuthName "MaxaBit Admin"
-AuthUserFile /opt/homebrew/var/www/maxabit2026/.htpasswd
-Require valid-user
-
-# login.php und logout.php sind ohne Basic-Auth-Passwort nicht erreichbar —
-# das ist gewollt, da login.php das PHP-Session-Login enthält.
+# Basic-Auth-Block wird von config.php automatisch mit dem korrekten Pfad geschrieben.
