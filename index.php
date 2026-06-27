@@ -15,6 +15,8 @@ function h($s) { return htmlspecialchars($s ?? '', ENT_QUOTES, 'UTF-8'); }
 
 <?php include __DIR__ . '/menu.php'; ?>
 
+<?php include __DIR__ . '/consent.php'; ?>
+
 <?php include __DIR__ . '/hero.php'; ?>
 
 <!-- ── LOGOS BAND ── -->

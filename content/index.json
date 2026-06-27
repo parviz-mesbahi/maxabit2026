@@ -1,23 +1,23 @@
 {
     "meta": {
-        "title": "MaxaBit IT-Solutions XX – Websites, die wirklich wirken"
+        "title": "MaxaBit IT-Solutions – Websites, Apps & digitale Lösungen mit KI"
     },
     "logos": {
         "label": "Vertrauen von Unternehmen aus verschiedenen Branchen",
         "items": [
-            "Handwerk",
-            "Gastronomie",
-            "Immobilien",
+            "Startups",
+            "Mittelstand",
+            "Arztpraxen",
+            "Rechtsanwaltskanzleien",
             "E-Commerce",
-            "Beratung",
             "Gesundheit",
-            "Bildung"
+            "Immobilien"
         ]
     },
     "how": {
         "section_label": "Wie es funktioniert",
-        "headline": "Von der Idee zur <em>fertigen Website</em> in Rekordzeit",
-        "sub": "Unser bewährter Prozess bringt Ihr Projekt schnell und zuverlässig ans Ziel.",
+        "headline": "Von der Idee zur <em>fertigen Lösung</em> in Rekordzeit",
+        "sub": "Unser bewährter Prozess bringt Ihr Projekt — ob Website, Web-App oder Mobile App — schnell und zuverlässig ans Ziel.",
         "steps": [
             {
                 "num": "01",
@@ -48,7 +48,7 @@
     "services": {
         "section_label": "Was wir für Sie bauen",
         "headline": "Maßgeschneiderte <em>Lösungen</em> für jeden Bedarf",
-        "sub": "Von der einfachen Visitenkarte bis zum komplexen E-Commerce-System.",
+        "sub": "Von der Unternehmenswebsite über individuelle Web-Apps bis zur nativen Mobile App für iOS und Android.",
         "items": [
             {
                 "color": "c-sky",
@@ -123,8 +123,22 @@
             {
                 "color": "c-pink",
                 "badge_class": "badge-pink",
-                "badge": "Hosting",
+                "badge": "Mobile App",
                 "icon_class": "pink",
+                "icon": "<rect x=\"5\" y=\"2\" width=\"14\" height=\"20\" rx=\"2\"/><line x1=\"12\" y1=\"18\" x2=\"12.01\" y2=\"18\"/>",
+                "title": "Mobile Apps",
+                "text": "Native und plattformübergreifende Apps für iOS und Android — von der Idee bis zur Veröffentlichung im App Store.",
+                "features": [
+                    "iOS & Android",
+                    "React Native / Flutter",
+                    "App Store Veröffentlichung"
+                ]
+            },
+            {
+                "color": "c-yellow",
+                "badge_class": "badge-yellow",
+                "badge": "Hosting",
+                "icon_class": "yellow",
                 "icon": "<rect x=\"2\" y=\"2\" width=\"20\" height=\"8\" rx=\"2\"/><rect x=\"2\" y=\"14\" width=\"20\" height=\"8\" rx=\"2\"/><line x1=\"6\" y1=\"6\" x2=\"6.01\" y2=\"6\"/><line x1=\"6\" y1=\"18\" x2=\"6.01\" y2=\"18\"/>",
                 "title": "Hosting & Domain",
                 "text": "Schnelles, sicheres Hosting in deutschen Rechenzentren mit 99,9 % Uptime-Garantie.",
@@ -176,7 +190,7 @@
         ],
         "section_label": "Künstliche Intelligenz",
         "headline": "Smarter entwickeln,<br>schneller <em>liefern</em>",
-        "sub": "Wir kombinieren menschliche Kreativität mit der Kraft moderner KI-Tools. Das Ergebnis: <strong>bessere Ergebnisse in kürzerer Zeit</strong> — ohne Abstriche bei der Qualität.",
+        "sub": "Wir kombinieren menschliche Kreativität mit modernster KI — für <strong>intelligente Websites, Web-Apps und mobile Lösungen</strong>, die Ihre Geschäftsprozesse digitalisieren und automatisieren.",
         "side_cards": [
             {
                 "icon": "<circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 8v4l3 3\"/>",

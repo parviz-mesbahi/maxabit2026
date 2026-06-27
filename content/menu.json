@@ -2,14 +2,16 @@
   "logo": {
     "name":   "MaxaBit",
     "suffix": "IT-Solutions",
-    "href":   "#"
+    "href":   "index.php"
   },
   "links": [
-    { "label": "Leistungen",   "href": "#leistungen" },
-    { "label": "KI-Funktionen","href": "#ki"         },
-    { "label": "Preise",       "href": "#preise"     },
-    { "label": "Kontakt",      "href": "#kontakt"    }
+    { "label": "Leistungen",   "href": "index.php#leistungen" },
+    { "label": "Corporate",    "href": "corporate.php"        },
+    { "label": "Applikation",  "href": "applikation.php"      },
+    { "label": "KI-Integration","href": "ki_integration.php"  },
+    { "label": "Preise",       "href": "index.php#preise"     },
+    { "label": "Kontakt",      "href": "index.php#kontakt"    }
   ],
   "cta_ghost":   { "label": "Anmelden",          "href": "admin/login.php" },
-  "cta_primary": { "label": "Kostenlos starten", "href": "#kontakt" }
+  "cta_primary": { "label": "Kostenlos starten", "href": "index.php#kontakt" }
 }

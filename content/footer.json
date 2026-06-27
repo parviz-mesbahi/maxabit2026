@@ -2,45 +2,39 @@
   "logo": {
     "name":   "MaxaBit",
     "suffix": "IT-Solutions",
-    "href":   "#"
+    "href":   "index.php"
   },
-  "brand_text": "Wir bauen Websites, die wirklich wirken — mit Leidenschaft, KI-Power und deutschem Qualitätsanspruch.",
-  "badge": "KI-zertifiziert",
+  "brand_text": "Wir entwickeln Websites, Web-Apps und mobile Apps — mit KI-Power, Leidenschaft und deutschem Qualitätsanspruch.",
+  "badge": "KI-Spezialisten",
   "cols": [
     {
       "title": "Leistungen",
       "links": [
-        { "label": "Corporate Website", "href": "#" },
-        { "label": "Online Shop",       "href": "#" },
-        { "label": "KI-Integration",    "href": "#" },
-        { "label": "SEO / Marketing",   "href": "#" },
-        { "label": "Hosting",           "href": "#" }
+        { "label": "Corporate Website", "href": "corporate.php" },
+        { "label": "Web-App Entwicklung","href": "applikation.php" },
+        { "label": "Mobile Apps",       "href": "applikation.php" },
+        { "label": "KI-Integration",    "href": "ki_integration.php" }
       ]
     },
     {
       "title": "Unternehmen",
       "links": [
-        { "label": "Über uns",  "href": "#" },
-        { "label": "Portfolio", "href": "#" },
-        { "label": "Blog",      "href": "#" },
-        { "label": "Karriere",  "href": "#" },
-        { "label": "Kontakt",   "href": "#" }
+        { "label": "Über uns",  "href": "index.php#ueber-uns" },
+        { "label": "Portfolio", "href": "index.php#portfolio" },
+        { "label": "Kontakt",   "href": "index.php#kontakt"   }
       ]
     },
     {
       "title": "Rechtliches",
       "links": [
-        { "label": "Impressum",         "href": "#" },
-        { "label": "Datenschutz",       "href": "#" },
-        { "label": "AGB",               "href": "#" },
-        { "label": "Cookie-Richtlinie", "href": "#" }
+        { "label": "Impressum",         "href": "impressum.php" },
+        { "label": "Datenschutz",       "href": "datenschutz.php" }
       ]
     }
   ],
   "copy": "© 2026 MaxaBit IT-Solutions. Alle Rechte vorbehalten.",
   "bottom_links": [
-    { "label": "Impressum",   "href": "#" },
-    { "label": "Datenschutz", "href": "#" },
-    { "label": "AGB",         "href": "#" }
+    { "label": "Impressum",   "href": "impressum.php" },
+    { "label": "Datenschutz", "href": "datenschutz.php" }
   ]
 }
