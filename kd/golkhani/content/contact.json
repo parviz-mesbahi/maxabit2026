@@ -1,0 +1,59 @@
+{
+  "page": "contact",
+  "meta": {
+    "title": "Kontakt – Zahnarztpraxis Dr. Golkhani, Frechen",
+    "description": "Zahnarztpraxis Dr. Bijan Golkhani – Hauptstraße 124-126, 50226 Frechen. Tel: 02234 16 666. Jetzt Termin vereinbaren."
+  },
+  "hero": {
+    "label": "Kontakt",
+    "heading": "Wir sind für Sie da",
+    "text": "Vereinbaren Sie Ihren Termin – online, telefonisch oder per E-Mail. Wir freuen uns auf Ihren Besuch."
+  },
+  "form": {
+    "heading": "Nachricht senden",
+    "subheading": "Wir melden uns schnellstmöglich bei Ihnen.",
+    "recipient": "dr.bijan.golkhani@gmx.de",
+    "fields": [
+      { "name": "name",    "type": "text",     "label": "Name",    "placeholder": "Ihr vollständiger Name", "required": true },
+      { "name": "email",   "type": "email",    "label": "E-Mail",  "placeholder": "ihre@email.de",          "required": true },
+      { "name": "phone",   "type": "tel",      "label": "Telefon", "placeholder": "0 2234 ...",             "required": false },
+      { "name": "message", "type": "textarea", "label": "Nachricht","placeholder": "Wie können wir Ihnen helfen?", "required": true }
+    ],
+    "submit_label": "Nachricht absenden",
+    "success_message": "Vielen Dank! Ihre Nachricht wurde erfolgreich übermittelt. Wir werden uns zeitnah bei Ihnen melden."
+  },
+  "contact_info": {
+    "address": {
+      "street": "Hauptstraße 124-126",
+      "city": "50226 Frechen"
+    },
+    "phone": "02234 16 666",
+    "phone_href": "tel:+4922341666",
+    "email": "dr.bijan.golkhani@gmx.de"
+  },
+  "hours": [
+    { "days": "Montag – Donnerstag", "time": "8:30 – 12:30 & 15:00 – 19:00" },
+    { "days": "Mittwochnachmittag",  "time": "Nur nach Terminvereinbarung" },
+    { "days": "Freitag",             "time": "08:30 – 13:30" },
+    { "days": "Samstag & Sonntag",   "time": "Geschlossen" }
+  ],
+  "emergency": {
+    "label": "Notfalldienst",
+    "text": "Zentrale Rufnummer der nordrheinischen Zahnärzte",
+    "phone": "01805 / 98 67 00",
+    "phone_href": "tel:018059867000"
+  },
+  "map": {
+    "embed_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2512.5!2d6.8150!3d50.9285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf25c0e1a2b2c3%3A0x0!2sHauptstra%C3%9Fe+124-126%2C+50226+Frechen!5e0!3m2!1sde!2sde!4v1",
+    "label": "Standort Zahnarztpraxis Dr. Golkhani, Frechen"
+  },
+  "online_booking": {
+    "label": "Online buchen",
+    "heading": "Einfach online Termin buchen",
+    "text": "Vereinbaren Sie Ihren Termin ganz einfach online über Doctolib – schnell, unkompliziert und rund um die Uhr.",
+    "cta": {
+      "label": "Jetzt Termin buchen",
+      "href": "https://www.doctolib.de/zahnarzt/frechen/bijan-golkhani"
+    }
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "page": "home",
+  "meta": {
+    "title": "Zahnarzt Dr. Golkhani – Frechen",
+    "description": "Zahnarztpraxis Dr. Bijan Golkhani in Frechen. Erstklassige Zahnmedizin – Implantologie, Parodontologie, Ästhetik und mehr."
+  },
+  "nav": {
+    "logo": "images/logo-new-2.png",
+    "phone": "+49 2234 16 666",
+    "links": [
+      { "label": "Home",      "href": "index.php" },
+      { "label": "Über uns",  "href": "about.php" },
+      { "label": "Leistungen","href": "services.php" },
+      { "label": "Kontakt",   "href": "contact.php" }
+    ]
+  },
+  "hero": {
+    "heading": "Erstklassige Zahnmedizin, der Sie vertrauen können",
+    "text": "Wenn Sie auf der Suche nach einem zuverlässigen Zahnarzt in der Stadt sind, sind Sie bei uns genau richtig. Wir stehen für hochwertige, bezahlbare und nahezu schmerzfreie Zahnbehandlungen – mit schnellen Terminen und zeitnahen Lösungen.",
+    "cta": {
+      "label": "Termin vereinbaren",
+      "href": "https://www.doctolib.de/zahnarzt/frechen/bijan-golkhani"
+    },
+    "images": [
+      "images/1-scaled.jpg",
+      "images/2.jpg"
+    ]
+  },
+  "about_preview": {
+    "label": "Über uns",
+    "heading": "Zahnärzte mit höchstem Qualitätsanspruch",
+    "text": "Herzlich willkommen in unserer Zahnarztpraxis. Wir stehen für moderne Zahnmedizin, hohe Qualitätsstandards und eine gewissenhafte Betreuung. Unser erfahrenes Team begleitet Sie von der Vorsorge bis zu komplexen Behandlungen – individuell, transparent und zuverlässig. Ihre Zahngesundheit und Ihr Wohlbefinden haben bei uns höchste Priorität.",
+    "cta": {
+      "label": "Mehr erfahren",
+      "href": "about.php"
+    },
+    "image": "images/about-1.jpg"
+  },
+  "services": {
+    "label": "Leistungen",
+    "heading": "Unsere Leistungen – Moderne Zahnmedizin für Ihre Gesundheit",
+    "subheading": "Wir bieten Ihnen ein umfassendes Spektrum moderner zahnmedizinischer Behandlungen",
+    "cta": {
+      "label": "Termin vereinbaren",
+      "href": "https://www.doctolib.de/zahnarzt/frechen/bijan-golkhani"
+    },
+    "items": [
+      {
+        "id": "aesthetik",
+        "title": "Ästhetische Zahnmedizin",
+        "text": "Ein strahlendes Lächeln und gesunde Zähne haben für uns höchste Priorität. Unser Praxisteam legt dabei besonderen Wert auf hochwertige ästhetische Behandlungen.",
+        "image": "images/service-1-1.jpg",
+        "href": "services.php#aesthetik"
+      },
+      {
+        "id": "implantologie",
+        "title": "Implantologie & Parodontologie",
+        "text": "Die Parodontologie und Implantologie zählen zu den Schwerpunkten unserer Praxis und bieten die Grundlage für langfristige Zahngesundheit sowie stabile ästhetische Lösungen.",
+        "image": "images/service-2.jpg",
+        "href": "services.php#implantologie"
+      },
+      {
+        "id": "restaurativ",
+        "title": "Restaurative Zahnmedizin",
+        "text": "Unser Ziel ist es, beschädigte oder erkrankte Zähne so zu behandeln, dass ihre natürliche Form, Funktion und Stabilität bestmöglich erhalten bleiben.",
+        "image": "images/service-3.jpg",
+        "href": "services.php#restaurativ"
+      },
+      {
+        "id": "veneer",
+        "title": "Komposit-Veneer",
+        "text": "Komposit-veneer sind eine schonende Möglichkeit, die Ästhetik ihrer Zähne zu verbessern. Mit moderner Technik korrigieren wir Form, Farbe und Kleine Zahnfehlstellungen – schnell und substanzschonend.",
+        "image": "images/Komposit-veneers.jpg",
+        "href": "services.php#veneer"
+      },
+      {
+        "id": "kinder",
+        "title": "Kinderzahnheilkunde",
+        "text": "Mit viel Geduld und Freundlichkeit begleiten wir Kinder auf ihrem Weg zu gesunden Zähnen. Unsere Praxis steht für moderne, kinderfreundliche Zahnheilkunde.",
+        "image": "images/service-5.jpg",
+        "href": "services.php#kinder"
+      },
+      {
+        "id": "prophylaxe",
+        "title": "Prophylaxe & Professionelle Zahnreinigung",
+        "text": "Der beste Weg zu langfristig gesunden Zähnen und gesundem Zahnfleisch ist eine konsequente Vorsorge. Durch regelmäßige professionelle Zahnreinigungen können Erkrankungen wie Karies und Parodontitis effektiv vorgebeugt werden.",
+        "image": "images/PZR-scaled.jpg",
+        "href": "services.php#prophylaxe"
+      }
+    ]
+  },
+  "appointment_cta": {
+    "heading": "Terminvereinbarung",
+    "text": "Vereinbaren Sie Ihren Termin ganz einfach online oder telefonisch. Unser Team hilft Ihnen schnell und unkompliziert weiter – für kurze Wartezeiten und eine flexible Planung.",
+    "cta": {
+      "label": "Termin vereinbaren",
+      "href": "https://www.doctolib.de/zahnarzt/frechen/bijan-golkhani"
+    },
+    "image": "images/terminieren-scaled.jpg"
+  },
+  "team_preview": {
+    "label": "Unser Team",
+    "heading": "Unser Team",
+    "text": "Unser freundliches und qualifiziertes Praxisteam steht Ihnen mit Fachkompetenz, Erfahrung und Einfühlungsvermögen zur Seite. Gemeinsam sorgen wir für eine angenehme Atmosphäre und eine bestmögliche zahnmedizinische Betreuung.",
+    "cta": {
+      "label": "Mehr erfahren",
+      "href": "about.php"
+    },
+    "image": "images/about-doctor-1.jpg"
+  },
+  "why_us": {
+    "label": "Warum wir?",
+    "heading": "Warum sollten Sie uns wählen?",
+    "subheading": "Wir stehen für moderne Zahnmedizin, einfühlsame Betreuung und höchste Qualitätsstandards.",
+    "doctor": {
+      "name": "Dr. Bijan Golkhani",
+      "text": "Unser Ziel ist es, für jeden Patienten die beste individuelle Lösung zu finden. Mit über 20 Jahren Erfahrung in Implantologie und Parodontologie bieten wir moderne, sichere Behandlungen für Patienten mit Zahnverlust. Dabei legen wir großen Wert auf Ästhetik, Funktion und passende Lösungen für jedes Budget.",
+      "bullets": [
+        "20+ Jahre an Erfahrung",
+        "Modern ausgestattete Praxis",
+        "Hochwertige Betreuung und Service"
+      ]
+    },
+    "cta": {
+      "label": "Termin vereinbaren",
+      "href": "https://www.doctolib.de/zahnarzt/frechen/bijan-golkhani"
+    },
+    "image": "images/warum-sollen-sie-scaled.jpg"
+  },
+  "testimonials": {
+    "label": "Feedback",
+    "heading": "Was unsere Patienten sagen",
+    "items": [
+      {
+        "name": "Renata",
+        "rating": 5,
+        "text": "Ich bin mit der Behandlung bei Dr. Golkhani rundum zufrieden. Ich hatte eine größere Behandlung mit mehreren Implantaten vor mir, und er hat sich dabei unglaublich viel Mühe gegeben und eine beeindruckende Geduld gezeigt. Während der gesamten Behandlung habe ich mich sehr gut aufgehoben und professionell betreut gefühlt. Das Ergebnis ist hervorragend und ich bin wirklich glücklich über das Endresultat. Vielen Dank an Dr. Golkhani und das gesamte Praxisteam für die großartige Arbeit!",
+        "image": "images/testimonial3.jpg"
+      },
+      {
+        "name": "M. Mirmatha",
+        "rating": 5,
+        "text": "Eine Zahnarztpraxis, in der wirklich alles stimmt. Die Angestellten und Mitarbeiterinnen sind durchweg freundlich und hilfsbereit. Bei Beschwerden oder Schmerzen geben sie sich immer große Mühe und finden stets eine Möglichkeit, mir kurzfristig einen Termin zu geben. Der Zahnarzt selbst ist hervorragend: sehr kompetent, lösungsorientiert und vorausschauend. Mögliche spätere Probleme erkennt er frühzeitig und erklärt alles verständlich. Ich bin schon seit sehr langer Zeit Patient in dieser Praxis und bin nach wie vor sehr fasziniert und rundum zufrieden. Eine klare Empfehlung!",
+        "image": "images/testimonial4.jpg"
+      },
+      {
+        "name": "H. Ulrich",
+        "rating": 5,
+        "text": "Wir können die negativen Rezensionen nicht nachvollziehen. Seit 12 Jahren ist Herr Dr. Bijan Golkhani der Zahnarzt unseres Vertrauens. Sein Fachwissen und seine Kompetenz, insbesondere im Bereich der Implantologie und Parodontologie, verbunden mit einer ausgiebigen und verständlichen Beratung überzeugt uns. Dazu kommt die empathische und freundliche Art, was auch für das gesamte Team gilt. Wenn sie einen guten Zahnarzt suchen, können wir die Praxis nur empfehlen.",
+        "image": "images/testimonial5.jpg"
+      }
+    ]
+  },
+  "footer": {
+    "logo_white": "images/white-logo.svg",
+    "tagline": "Für Ihr strahlendes Lächeln – moderne Zahnmedizin, individuell und schonend. Vereinbaren Sie noch heute Ihren Termin!",
+    "cta": {
+      "label": "Termin vereinbaren",
+      "href": "https://www.doctolib.de/zahnarzt/frechen/bijan-golkhani"
+    },
+    "contact": {
+      "phone": "02234 16 666",
+      "address": "Hauptstraße 124-126, 50226 Frechen"
+    },
+    "hours": [
+      { "days": "Mo – Do", "time": "8:30 – 12:30 & 15:00 – 19:00" },
+      { "days": "Mi-Nachmittag", "time": "Nur nach Vereinbarung" },
+      { "days": "Freitag", "time": "08:30 – 13:30" }
+    ],
+    "emergency": {
+      "label": "Notfalldienst",
+      "text": "Zentrale Rufnummer der nordrheinischen Zahnärzte",
+      "phone": "01805 / 98 67 00"
+    },
+    "social": {
+      "instagram": "https://www.instagram.com"
+    },
+    "legal": {
+      "copyright": "© 2025 Dr. Golkhani Zahnarztpraxis | Powered by MaxaBit IT-Solutions",
+      "datenschutz": "datenschutz.php"
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "page": "about",
+  "meta": {
+    "title": "Über uns – Zahnarztpraxis Dr. Golkhani, Frechen",
+    "description": "Lernen Sie das Team der Zahnarztpraxis Dr. Bijan Golkhani kennen. Erfahrung, Qualität und einfühlsame Betreuung seit über 20 Jahren."
+  },
+  "hero": {
+    "label": "Über uns",
+    "heading": "Vertrauen, Erfahrung und moderne Zahnmedizin",
+    "text": "Qualität, Vertrauen und eine angenehme Atmosphäre – das sind die Werte, die unsere Praxis seit mehr als 20 Jahren prägen."
+  },
+  "history": {
+    "label": "Unsere Geschichte",
+    "heading": "Unsere Geschichte",
+    "paragraphs": [
+      "Unsere Zahnarztpraxis in Frechen steht seit über zwei Jahrzehnten für erstklassige zahnmedizinische Versorgung. Was als kleine Praxis begann, hat sich zu einem modernen zahnmedizinischen Zentrum entwickelt, das höchsten Ansprüchen gerecht wird.",
+      "Unter der Leitung von Dr. Bijan Golkhani M.Sc., M.Sc. legen wir größten Wert auf Transparenz, ehrliche Beratung und Behandlung auf höchstem fachlichem Niveau. Jeder Patient wird bei uns individuell und mit größtmöglicher Sorgfalt betreut."
+    ],
+    "image": "images/about-1.jpg"
+  },
+  "doctor": {
+    "label": "Chefarzt",
+    "name": "Dr. Bijan Golkhani M.Sc., M.Sc.",
+    "role": "Fachzahnarzt für Parodontologie und Implantologie",
+    "paragraphs": [
+      "Mit über 20 Jahren Erfahrung in der Implantologie und Parodontologie bietet Dr. Golkhani seinen Patienten moderne, sichere und individuelle Behandlungen. Sein Ziel ist es, für jeden Patienten die beste individuelle Lösung zu finden – unter Berücksichtigung von Ästhetik, Funktion und Budget.",
+      "Sein Fachwissen und seine Kompetenz, verbunden mit einer ausgiebigen und verständlichen Beratung, schaffen ein Vertrauensverhältnis, das Patienten seit Jahrzehnten schätzen."
+    ],
+    "qualifications": [
+      "M.Sc. Parodontologie",
+      "M.Sc. Implantologie",
+      "20+ Jahre klinische Erfahrung",
+      "Spezialisiert auf komplexe Implantatversorgungen"
+    ],
+    "cta": {
+      "label": "Termin vereinbaren",
+      "href": "https://www.doctolib.de/zahnarzt/frechen/bijan-golkhani"
+    },
+    "image": "images/about-doctor-1.jpg"
+  },
+  "team": {
+    "label": "Team",
+    "heading": "Unser Team",
+    "text": "Unser freundliches und qualifiziertes Praxisteam steht Ihnen mit Fachkompetenz, Erfahrung und Einfühlungsvermögen zur Seite. Gemeinsam sorgen wir für eine angenehme Atmosphäre und eine bestmögliche zahnmedizinische Betreuung.",
+    "members": [
+      {
+        "name": "Nadia M. Azad",
+        "role": "Dental Assistant / Administration",
+        "image": "images/IMG_1602.jpg"
+      },
+      {
+        "name": "Inna Halster",
+        "role": "Dental Assistant Administration",
+        "image": "images/IMG_1603.jpg"
+      },
+      {
+        "name": "Carmen Oosterwijk",
+        "role": "Dental Assistant",
+        "image": "images/IMG_1605.jpg"
+      },
+      {
+        "name": "Dayla Darman",
+        "role": "Auszubildende",
+        "image": "images/IMG_1608.jpg"
+      }
+    ]
+  },
+  "values": {
+    "label": "Unsere Werte",
+    "heading": "Unsere Werte",
+    "text": "Transparenz, ehrliche Beratung und Behandlung auf höchstem fachlichem Niveau – das ist unser Versprechen an jeden Patienten.",
+    "items": [
+      {
+        "icon": "🏆",
+        "title": "Qualität",
+        "text": "Wir setzen ausschließlich auf hochwertige Materialien und modernste Behandlungsmethoden, um dauerhaft beste Ergebnisse zu erzielen."
+      },
+      {
+        "icon": "🤝",
+        "title": "Vertrauen",
+        "text": "Ehrliche Beratung und transparente Kommunikation sind die Grundlage unserer langjährigen Patientenbeziehungen."
+      },
+      {
+        "icon": "💡",
+        "title": "Innovation",
+        "text": "Unsere modern ausgestattete Praxis nutzt die neuesten Technologien für präzise Diagnosen und schonende Behandlungen."
+      },
+      {
+        "icon": "❤️",
+        "title": "Einfühlsamkeit",
+        "text": "Wir nehmen uns Zeit für Ihre Anliegen und begleiten Sie mit Geduld und Verständnis durch jede Behandlung."
+      }
+    ]
+  },
+  "gallery": {
+    "label": "Unsere Praxis",
+    "heading": "Moderne Zahnmedizin in angenehmer Atmosphäre",
+    "images": [
+      { "src": "images/IMG_9027-scaled.jpg", "alt": "Praxis Dr. Golkhani" },
+      { "src": "images/IMG_9054.jpg",         "alt": "Behandlungsraum" },
+      { "src": "images/IMG_9124-scaled.jpg",  "alt": "Empfang" },
+      { "src": "images/IMG_9281-scaled.jpg",  "alt": "Wartebereich" }
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "page": "services",
+  "meta": {
+    "title": "Leistungen – Zahnarztpraxis Dr. Golkhani, Frechen",
+    "description": "Unsere zahnmedizinischen Leistungen: Ästhetik, Implantologie, Parodontologie, Prophylaxe, Kinderzahnheilkunde und mehr."
+  },
+  "hero": {
+    "label": "Leistungen",
+    "heading": "Unsere Leistungen",
+    "text": "Schöne Zähne steigern Ihr Selbstbewusstsein und Ihre Lebensfreude."
+  },
+  "intro": "Wir stehen für moderne Zahnmedizin, einfühlsame Betreuung und höchste Qualitätsstandards.",
+  "items": [
+    {
+      "id": "aesthetik",
+      "title": "Ästhetische Zahnmedizin",
+      "label": "Leistung",
+      "image": "images/Aesthetik.jpg",
+      "text": "Ein schönes Lächeln stärkt das Selbstbewusstsein und erhöht die Lebensfreude. Ein strahlendes Lächeln und gesunde Zähne haben für uns höchste Priorität. Unser Praxisteam legt dabei besonderen Wert auf hochwertige ästhetische Behandlungen.",
+      "benefits": [
+        "Es wirkt sympathisch und positiv auf andere Menschen.",
+        "Es trägt zu mehr Lebensfreude und Wohlbefinden bei.",
+        "Ein schönes Lächeln stärkt das Selbstbewusstsein im Alltag."
+      ],
+      "gallery": [
+        { "src": "images/Aesthetische-2.jpg",   "alt": "Ästhetik Ergebnis" },
+        { "src": "images/Aesthetische-2-1.jpg", "alt": "Ästhetische Behandlung" }
+      ]
+    },
+    {
+      "id": "veneer",
+      "title": "Vollkeramische Verblendungsschale",
+      "label": "Leistung",
+      "image": "images/vollkeramische-Verblendungsschale.jpg",
+      "text": "Verblendungsschalen (Veneers) sind dünne Keramikschalen, die auf die Frontzähne geklebt werden, um Farbe, Form und kleine Fehlstellungen zu korrigieren.",
+      "benefits": [
+        "Veneers sorgen für ein gleichmäßiges und ästhetisches Zahnbild.",
+        "Sie ermöglichen eine schnelle und schonende Verschönerung der Frontzähne.",
+        "Das Ergebnis ist ein natürlich wirkendes, harmonisches Lächeln."
+      ],
+      "gallery": []
+    },
+    {
+      "id": "implantologie",
+      "title": "Implantologie & Parodontologie",
+      "label": "Leistung",
+      "image": "images/mplantatgetragenen-Einzelkrone.jpg",
+      "text": "Die Parodontologie und Implantologie zählen zu den Schwerpunkten unserer Praxis und bieten die Grundlage für langfristige Zahngesundheit sowie stabile ästhetische Lösungen.",
+      "subsections": [
+        {
+          "title": "Implantatgetragene Einzelkrone",
+          "text": "Ein Implantat ersetzt einen verlorenen Zahn auf schonende Weise. Die Nachbarzähne müssen nicht beschliffen werden und bleiben vollständig erhalten.",
+          "benefits": [
+            "Ein Implantat bietet einen festen und langlebigen Zahnersatz.",
+            "Es fühlt sich wie ein natürlicher Zahn an und sorgt für hohen Kaukomfort.",
+            "Zudem trägt es zum Erhalt des Kieferknochens bei."
+          ]
+        },
+        {
+          "title": "Implantatgetragene herausnehmbare Prothese",
+          "text": "Eine implantatgetragene herausnehmbare Prothese bietet einen sicheren und stabilen Halt. Sie sitzt fest im Mund und verbessert den Kaukomfort deutlich. Dadurch gewinnen Patientinnen und Patienten mehr Sicherheit und Selbstbewusstsein im Alltag.",
+          "benefits": []
+        }
+      ],
+      "gallery": []
+    },
+    {
+      "id": "amalgam",
+      "title": "Amalgamsanierung",
+      "label": "Leistung",
+      "image": "images/Amalgamsanierung.jpg",
+      "text": "Wir ersetzen alte Amalgamfüllungen durch hochwertige Kompositfüllungen, die gut verträglich sind und die Gesundheit unserer Patienten unterstützen.",
+      "benefits": [
+        "Bei der Amalgamsanierung werden alte Amalgamfüllungen schonend entfernt.",
+        "Sie werden durch moderne, hochwertige Kompositfüllungen ersetzt.",
+        "Diese sind gut verträglich und unterstützen die langfristige Zahngesundheit."
+      ],
+      "gallery": [
+        { "src": "images/amalgamfuellung.jpg",  "alt": "Amalgamfüllung" },
+        { "src": "images/compositfuellung.jpg", "alt": "Kompositfüllung" }
+      ]
+    },
+    {
+      "id": "restaurativ",
+      "title": "Restaurative Zahnmedizin",
+      "label": "Leistung",
+      "image": "images/Komposit_Zahnfuellung.jpg",
+      "text": "Unser Ziel ist es, beschädigte oder erkrankte Zähne so zu behandeln, dass ihre natürliche Form, Funktion und Stabilität bestmöglich erhalten bleiben.",
+      "benefits": [
+        "Mehrschichtfüllungen für ein natürliches Aussehen",
+        "Keramische Inlays und Onlays",
+        "Schonende und dauerhafte Restaurationen"
+      ],
+      "gallery": [
+        { "src": "images/mehrschichtfuellung.jpg", "alt": "Mehrschichtfüllung" },
+        { "src": "images/inlay_mund.jpg",           "alt": "Inlay" }
+      ]
+    },
+    {
+      "id": "komposit",
+      "title": "Komposit-Veneer",
+      "label": "Leistung",
+      "image": "images/Komposit-veneers.jpg",
+      "text": "Komposit-Veneer sind eine schonende Möglichkeit, die Ästhetik ihrer Zähne zu verbessern. Mit moderner Technik korrigieren wir Form, Farbe und kleine Zahnfehlstellungen – schnell und substanzschonend.",
+      "benefits": [
+        "Schnelle und substanzschonende Behandlung",
+        "Natürliches, harmonisches Ergebnis",
+        "Korrektur von Form, Farbe und kleinen Fehlstellungen"
+      ],
+      "gallery": []
+    },
+    {
+      "id": "kinder",
+      "title": "Kinderzahnheilkunde",
+      "label": "Leistung",
+      "image": "images/service-5.jpg",
+      "text": "Mit viel Geduld und Freundlichkeit begleiten wir Kinder auf ihrem Weg zu gesunden Zähnen. Unsere Praxis steht für moderne, kinderfreundliche Zahnheilkunde.",
+      "benefits": [
+        "Einfühlsame und geduldige Behandlung",
+        "Kinderfreundliche Atmosphäre",
+        "Frühzeitige Vorsorge für gesunde Kinderzähne"
+      ],
+      "gallery": []
+    },
+    {
+      "id": "prophylaxe",
+      "title": "Prophylaxe & Professionelle Zahnreinigung",
+      "label": "Leistung",
+      "image": "images/PZR-4-scaled.jpg",
+      "paragraphs": [
+        "Der beste Weg zu langfristig gesunden Zähnen und gesundem Zahnfleisch ist eine konsequente Vorsorge. Durch regelmäßige professionelle Zahnreinigungen können Erkrankungen wie Karies und Parodontitis effektiv vorgebeugt werden.",
+        "Die professionelle Zahnreinigung (PZR) trägt wesentlich zum Erhalt gesunder Zähne und eines gesunden Zahnfleisches bei."
+      ],
+      "benefits": [],
+      "gallery": [
+        { "src": "images/prophylaxe_vorher.jpg",  "alt": "PZR vorher" },
+        { "src": "images/prophylaxe_nachher.jpg", "alt": "PZR nachher" }
+      ]
+    }
+  ]
+}
