@@ -1,0 +1,156 @@
+{
+  "page": "datenschutz",
+  "meta": {
+    "title": "Datenschutzerklärung – Zahnarztpraxis Dr. Golkhani, Frechen",
+    "description": "Datenschutzerklärung der Zahnarztpraxis Dr. Bijan Golkhani in Frechen gemäß DSGVO."
+  },
+  "hero": {
+    "label": "Rechtliches",
+    "heading": "Datenschutzerklärung",
+    "text": "Informationen zur Verarbeitung Ihrer personenbezogenen Daten gemäß DSGVO"
+  },
+  "sections": [
+    {
+      "id": "verantwortlicher",
+      "heading": "1. Verantwortlicher",
+      "paragraphs": [
+        "Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:"
+      ],
+      "address": [
+        "Dr. Bijan Golkhani M.Sc., M.Sc.",
+        "Zahnarztpraxis Dr. Golkhani",
+        "Hauptstraße 124–126",
+        "50226 Frechen",
+        "Telefon: 02234 16 666",
+        "E-Mail: dr.bijan.golkhani@gmx.de"
+      ],
+      "address_links": {
+        "Telefon: 02234 16 666": { "href": "tel:+492234166660", "text": "02234 16 666" },
+        "E-Mail: dr.bijan.golkhani@gmx.de": { "href": "mailto:dr.bijan.golkhani@gmx.de", "text": "dr.bijan.golkhani@gmx.de" }
+      }
+    },
+    {
+      "id": "grundsaetze",
+      "heading": "2. Grundsätze der Datenverarbeitung",
+      "paragraphs": [
+        "Wir verarbeiten personenbezogene Daten nur, soweit dies zur Bereitstellung einer funktionsfähigen Website sowie unserer Inhalte und Leistungen erforderlich ist. Die Verarbeitung personenbezogener Daten unserer Nutzer erfolgt regelmäßig nur nach Einwilligung des Nutzers. Eine Ausnahme gilt in solchen Fällen, in denen eine vorherige Einholung einer Einwilligung aus tatsächlichen Gründen nicht möglich ist und die Verarbeitung der Daten durch gesetzliche Vorschriften gestattet ist."
+      ]
+    },
+    {
+      "id": "erhebung",
+      "heading": "3. Erhebung und Speicherung personenbezogener Daten",
+      "subsections": [
+        {
+          "id": "logfiles",
+          "heading": "3.1 Server-Logfiles",
+          "paragraphs": [
+            "Beim Aufrufen unserer Website werden durch den auf Ihrem Endgerät zum Einsatz kommenden Browser automatisch Informationen an den Server unserer Website gesendet. Diese Informationen werden temporär in einem sog. Logfile gespeichert. Folgende Informationen werden dabei ohne Ihr Zutun erfasst und bis zur automatisierten Löschung gespeichert:"
+          ],
+          "list": [
+            "IP-Adresse des anfragenden Rechners",
+            "Datum und Uhrzeit des Zugriffs",
+            "Name und URL der abgerufenen Datei",
+            "Website, von der aus der Zugriff erfolgt (Referrer-URL)",
+            "verwendeter Browser und ggf. das Betriebssystem Ihres Rechners",
+            "Name Ihres Access-Providers"
+          ],
+          "paragraphs_after": [
+            "Die genannten Daten werden durch uns zu folgenden Zwecken verarbeitet: Gewährleistung eines reibungslosen Verbindungsaufbaus der Website, Gewährleistung einer komfortablen Nutzung unserer Website, Auswertung der Systemsicherheit und -stabilität sowie zu weiteren administrativen Zwecken.",
+            "Die Rechtsgrundlage für die Datenverarbeitung ist Art. 6 Abs. 1 S. 1 lit. f DSGVO. Unser berechtigtes Interesse folgt aus den oben aufgelisteten Zwecken zur Datenerhebung. Die erhobenen Daten werden nicht zur Erstellung von Nutzerprofilen verwendet."
+          ]
+        },
+        {
+          "id": "kontaktformular",
+          "heading": "3.2 Kontaktformular",
+          "paragraphs": [
+            "Bei Ihrer Kontaktaufnahme mit uns per Formular oder E-Mail werden die von Ihnen mitgeteilten Daten (Ihre E-Mail-Adresse, ggf. Ihr Name und Ihre Telefonnummer) von uns gespeichert, um Ihre Fragen zu beantworten.",
+            "Die in diesem Zusammenhang anfallenden Daten löschen wir, nachdem die Speicherung nicht mehr erforderlich ist, oder schränken die Verarbeitung ein, falls gesetzliche Aufbewahrungspflichten bestehen.",
+            "Rechtsgrundlage für die Verarbeitung der Daten ist Art. 6 Abs. 1 S. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO)."
+          ]
+        },
+        {
+          "id": "doctolib",
+          "heading": "3.3 Terminvereinbarung über Doctolib",
+          "paragraphs": [
+            "Für die Online-Terminvereinbarung nutzen wir den Dienst Doctolib. Wenn Sie über Doctolib einen Termin vereinbaren, werden Ihre Daten direkt bei Doctolib verarbeitet."
+          ],
+          "link": {
+            "label": "Informationen zum Datenschutz bei Doctolib",
+            "url": "https://www.doctolib.de/datenschutzerklaerung",
+            "display": "www.doctolib.de/datenschutzerklaerung"
+          }
+        }
+      ]
+    },
+    {
+      "id": "patientendaten",
+      "heading": "4. Patientendaten",
+      "paragraphs": [
+        "Im Rahmen der zahnärztlichen Behandlung verarbeiten wir Ihre Gesundheitsdaten auf Grundlage von Art. 9 Abs. 2 lit. h DSGVO in Verbindung mit § 22 Abs. 1 Nr. 1 lit. b BDSG. Diese Daten unterliegen der besonderen ärztlichen Schweigepflicht gemäß § 203 StGB und werden ausschließlich für Behandlungszwecke verarbeitet. Die Aufbewahrungsfrist beträgt gemäß § 10 Abs. 3 BOZ mindestens 10 Jahre."
+      ]
+    },
+    {
+      "id": "cookies",
+      "heading": "5. Cookies",
+      "paragraphs": [
+        "Unsere Website verwendet Cookies. Bei Cookies handelt es sich um Textdateien, die im Internetbrowser bzw. vom Internetbrowser auf dem Computersystem des Nutzers gespeichert werden. Diese Website verwendet ausschließlich technisch notwendige Cookies (z. B. zur Verwaltung von Sitzungen), die keine Einwilligung erfordern (Art. 6 Abs. 1 lit. f DSGVO). Es werden keine Tracking- oder Analyse-Cookies gesetzt."
+      ]
+    },
+    {
+      "id": "ssl",
+      "heading": "6. SSL-Verschlüsselung",
+      "paragraphs": [
+        "Diese Seite nutzt aus Gründen der Sicherheit und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel der Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von http:// auf https:// wechselt und an dem Schloss-Symbol in Ihrer Browserzeile."
+      ]
+    },
+    {
+      "id": "rechte",
+      "heading": "7. Ihre Rechte als betroffene Person",
+      "paragraphs": [
+        "Sie haben das Recht:"
+      ],
+      "list": [
+        "gemäß Art. 15 DSGVO Auskunft über Ihre von uns verarbeiteten personenbezogenen Daten zu verlangen;",
+        "gemäß Art. 16 DSGVO unverzüglich die Berichtigung unrichtiger oder Vervollständigung Ihrer bei uns gespeicherten personenbezogenen Daten zu verlangen;",
+        "gemäß Art. 17 DSGVO die Löschung Ihrer bei uns gespeicherten personenbezogenen Daten zu verlangen;",
+        "gemäß Art. 18 DSGVO die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen;",
+        "gemäß Art. 20 DSGVO Ihre personenbezogenen Daten, die Sie uns bereitgestellt haben, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten oder die Übermittlung an einen anderen Verantwortlichen zu verlangen;",
+        "gemäß Art. 7 Abs. 3 DSGVO Ihre einmal erteilte Einwilligung jederzeit gegenüber uns zu widerrufen;",
+        "gemäß Art. 77 DSGVO sich bei einer Aufsichtsbehörde zu beschweren."
+      ],
+      "subsections": [
+        {
+          "id": "widerspruch",
+          "heading": "Widerspruchsrecht",
+          "paragraphs": [
+            "Sofern Ihre personenbezogenen Daten auf Grundlage von berechtigten Interessen gemäß Art. 6 Abs. 1 S. 1 lit. f DSGVO verarbeitet werden, haben Sie das Recht, gemäß Art. 21 DSGVO Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten einzulegen, soweit dafür Gründe vorliegen, die sich aus Ihrer besonderen Situation ergeben."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aufsicht",
+      "heading": "8. Zuständige Aufsichtsbehörde",
+      "paragraphs": [
+        "Beschwerden bezüglich der Verarbeitung Ihrer personenbezogenen Daten können Sie an die zuständige Datenschutz-Aufsichtsbehörde richten:"
+      ],
+      "address": [
+        "Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen",
+        "Postfach 20 04 44",
+        "40102 Düsseldorf"
+      ],
+      "link": {
+        "label": "Website der LDI NRW",
+        "url": "https://www.ldi.nrw.de",
+        "display": "www.ldi.nrw.de"
+      }
+    },
+    {
+      "id": "aktualitaet",
+      "heading": "9. Aktualität und Änderung dieser Datenschutzerklärung",
+      "paragraphs": [
+        "Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Juni 2025. Durch die Weiterentwicklung unserer Website und Angebote darüber oder aufgrund geänderter gesetzlicher beziehungsweise behördlicher Vorgaben kann es notwendig werden, diese Datenschutzerklärung zu ändern. Die jeweils aktuelle Datenschutzerklärung kann jederzeit auf der Website von Ihnen abgerufen und ausgedruckt werden."
+      ]
+    }
+  ]
+}

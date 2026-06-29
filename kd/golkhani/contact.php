@@ -7,35 +7,15 @@ $pageDesc  = $c['meta']['description'] ?? '';
 require 'includes/header.php';
 
 $hero    = $c['hero']           ?? [];
-$form    = $c['form']           ?? [];
 $info    = $c['contact_info']   ?? [];
 $hours   = $c['hours']          ?? [];
 $emerg   = $c['emergency']      ?? [];
 $map     = $c['map']            ?? [];
 $booking = $c['online_booking'] ?? [];
 
-$success = false;
-$errors  = [];
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $name    = trim($_POST['name']    ?? '');
-    $email   = trim($_POST['email']   ?? '');
-    $phone   = trim($_POST['phone']   ?? '');
-    $message = trim($_POST['message'] ?? '');
-
-    if (!$name)                                        $errors[] = 'Bitte geben Sie Ihren Namen ein.';
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL))    $errors[] = 'Bitte geben Sie eine gültige E-Mail-Adresse ein.';
-    if (!$message)                                     $errors[] = 'Bitte geben Sie eine Nachricht ein.';
-
-    if (empty($errors)) {
-        $to      = $form['recipient'] ?? 'dr.bijan.golkhani@gmx.de';
-        $subject = 'Kontaktanfrage von ' . $name;
-        $body    = "Name: $name\nE-Mail: $email\nTelefon: $phone\n\nNachricht:\n$message";
-        $headers = "From: noreply@zahnarzt-golkhani.de\r\nReply-To: $email";
-        mail($to, $subject, $body, $headers);
-        $success = true;
-    }
-}
+$email   = $info['email'] ?? 'dr.bijan.golkhani@gmx.de';
+$subject = rawurlencode('Kontaktanfrage – Zahnarztpraxis Dr. Golkhani');
+$mailtoHref = 'mailto:' . htmlspecialchars($email) . '?subject=' . $subject;
 ?>
 
 <!-- ===== PAGE HERO ===== -->
@@ -52,60 +32,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <section class="section">
     <div class="container contact-grid">
 
-        <!-- FORMULAR -->
+        <!-- E-MAIL KONTAKT -->
         <div class="contact-form-wrap">
-            <h2><?= htmlspecialchars($form['heading'] ?? '') ?></h2>
-            <p class="contact-form-sub"><?= htmlspecialchars($form['subheading'] ?? '') ?></p>
+            <h2>Schreiben Sie uns</h2>
+            <p class="contact-form-sub">Klicken Sie auf den Button – Ihr E-Mail-Programm öffnet sich mit der richtigen Adresse und einem vorausgefüllten Betreff.</p>
 
-            <?php if ($success): ?>
-                <div class="form-success">
-                    <strong>Vielen Dank!</strong> <?= htmlspecialchars($form['success_message'] ?? '') ?>
+            <a href="<?= $mailtoHref ?>" class="mailto-card">
+                <div class="mailto-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
                 </div>
-            <?php endif; ?>
-
-            <?php if ($errors): ?>
-                <div class="form-errors">
-                    <?php foreach ($errors as $e): ?>
-                        <p><?= htmlspecialchars($e) ?></p>
-                    <?php endforeach; ?>
+                <div class="mailto-text">
+                    <span class="mailto-label">E-Mail schreiben</span>
+                    <span class="mailto-address"><?= htmlspecialchars($email) ?></span>
                 </div>
-            <?php endif; ?>
-
-            <form method="post" action="contact.php" class="contact-form" novalidate>
-                <?php
-                $fields = $form['fields'] ?? [];
-                $row_open = false;
-                foreach ($fields as $idx => $field):
-                    $next = $fields[$idx + 1] ?? null;
-                    $prev = $fields[$idx - 1] ?? null;
-
-                    // group email + phone in a row
-                    if ($field['name'] === 'email' && $next && $next['name'] === 'phone'):
-                        echo '<div class="form-row">';
-                        $row_open = true;
-                    endif;
-                ?>
-                <div class="form-group">
-                    <label for="<?= $field['name'] ?>"><?= htmlspecialchars($field['label']) ?><?= $field['required'] ? ' *' : '' ?></label>
-                    <?php if ($field['type'] === 'textarea'): ?>
-                        <textarea id="<?= $field['name'] ?>" name="<?= $field['name'] ?>" rows="5"
-                                  placeholder="<?= htmlspecialchars($field['placeholder']) ?>"
-                                  <?= $field['required'] ? 'required' : '' ?>><?= htmlspecialchars($_POST[$field['name']] ?? '') ?></textarea>
-                    <?php else: ?>
-                        <input type="<?= $field['type'] ?>" id="<?= $field['name'] ?>" name="<?= $field['name'] ?>"
-                               placeholder="<?= htmlspecialchars($field['placeholder']) ?>"
-                               value="<?= htmlspecialchars($_POST[$field['name']] ?? '') ?>"
-                               <?= $field['required'] ? 'required' : '' ?>>
-                    <?php endif; ?>
+                <div class="mailto-arrow">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
                 </div>
-                <?php
-                    if ($field['name'] === 'phone' && $prev && $prev['name'] === 'email'):
-                        echo '</div>';
-                        $row_open = false;
-                    endif;
-                endforeach; ?>
-                <button type="submit" class="btn btn-primary"><?= htmlspecialchars($form['submit_label'] ?? 'Absenden') ?></button>
-            </form>
+            </a>
+
+            <p class="mailto-hint">Kein E-Mail-Programm installiert? Rufen Sie uns gerne direkt an:<br>
+                <a href="<?= htmlspecialchars($info['phone_href'] ?? '#') ?>" class="mailto-phone">
+                    <?= htmlspecialchars($info['phone'] ?? '') ?>
+                </a>
+            </p>
         </div>
 
         <!-- KONTAKTDATEN -->
@@ -122,7 +76,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <p><a href="<?= htmlspecialchars($info['phone_href'] ?? '#') ?>"><?= htmlspecialchars($info['phone'] ?? '') ?></a></p>
             </div>
             <div class="contact-info-card">
-                <div class="contact-info-icon">✉️</div>
+                <div class="contact-info-icon contact-info-icon--blue">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="4" width="20" height="16" rx="2"/>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                </div>
                 <h3>E-Mail</h3>
                 <p><a href="mailto:<?= htmlspecialchars($info['email'] ?? '') ?>"><?= htmlspecialchars($info['email'] ?? '') ?></a></p>
             </div>
@@ -152,11 +111,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!-- ===== KARTE ===== -->
 <?php if (!empty($map['embed_url'])): ?>
 <section class="map-section">
-    <iframe src="<?= htmlspecialchars($map['embed_url']) ?>"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    <div class="map-consent" id="mapConsent">
+        <div class="map-consent-inner">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            <h3>Google Maps</h3>
+            <p>Diese Karte wird von Google bereitgestellt. Beim Laden werden Daten (IP-Adresse) an Google übertragen. Stimmen Sie zu, um die Karte anzuzeigen.</p>
+            <button class="btn btn-primary" onclick="loadMap(
+                '<?= htmlspecialchars($map['embed_url'], ENT_QUOTES) ?>',
+                '<?= htmlspecialchars($map['label'] ?? 'Standort', ENT_QUOTES) ?>'
+            )">Karte laden</button>
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="map-consent-link">Google Datenschutzerklärung</a>
+        </div>
+    </div>
+    <iframe id="mapFrame" src="" width="100%" height="450"
+            style="border:0;display:none;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
             title="<?= htmlspecialchars($map['label'] ?? 'Standort') ?>"></iframe>
 </section>
+<script>
+function loadMap(url, label) {
+    const frame = document.getElementById('mapFrame');
+    const consent = document.getElementById('mapConsent');
+    frame.src = url;
+    frame.title = label;
+    frame.style.display = 'block';
+    consent.style.display = 'none';
+}
+</script>
 <?php endif; ?>
 
 <!-- ===== ONLINE BOOKING CTA ===== -->

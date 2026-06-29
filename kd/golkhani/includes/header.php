@@ -9,8 +9,6 @@ $current = basename($_SERVER['PHP_SELF']);
     <title><?= htmlspecialchars($pageTitle ?? 'Zahnarzt Dr. Golkhani – Frechen') ?></title>
     <meta name="description" content="<?= htmlspecialchars($pageDesc ?? 'Zahnarztpraxis Dr. Bijan Golkhani in Frechen. Erstklassige Zahnmedizin – Implantologie, Parodontologie, Ästhetik und mehr.') ?>">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
