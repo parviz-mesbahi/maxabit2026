@@ -1,15 +1,25 @@
 <?php
-$pageTitle = 'Über uns – Zahnarztpraxis Dr. Golkhani, Frechen';
-$pageDesc  = 'Lernen Sie das Team der Zahnarztpraxis Dr. Bijan Golkhani kennen. Erfahrung, Qualität und einfühlsame Betreuung seit über 20 Jahren.';
+require 'includes/load_content.php';
+$c = load_content('about');
+
+$pageTitle = $c['meta']['title']       ?? 'Über uns – Dr. Golkhani';
+$pageDesc  = $c['meta']['description'] ?? '';
 require 'includes/header.php';
+
+$hero    = $c['hero']    ?? [];
+$history = $c['history'] ?? [];
+$doctor  = $c['doctor']  ?? [];
+$team    = $c['team']    ?? [];
+$values  = $c['values']  ?? [];
+$gallery = $c['gallery'] ?? [];
 ?>
 
 <!-- ===== PAGE HERO ===== -->
 <section class="page-hero">
     <div class="container">
-        <span class="section-label">Über uns</span>
-        <h1>Vertrauen, Erfahrung und<br>moderne Zahnmedizin</h1>
-        <p>Qualität, Vertrauen und eine angenehme Atmosphäre – das sind die Werte, die unsere Praxis seit mehr als 20 Jahren prägen.</p>
+        <span class="section-label"><?= htmlspecialchars($hero['label'] ?? '') ?></span>
+        <h1><?= htmlspecialchars($hero['heading'] ?? '') ?></h1>
+        <p><?= htmlspecialchars($hero['text'] ?? '') ?></p>
     </div>
     <img src="images/bg-graphic-2.svg" alt="" class="page-hero-bg" aria-hidden="true">
 </section>
@@ -18,13 +28,14 @@ require 'includes/header.php';
 <section class="section">
     <div class="container about-inner">
         <div class="about-image">
-            <img src="images/about-1.jpg" alt="Zahnarztpraxis Dr. Golkhani Innenansicht">
+            <img src="<?= htmlspecialchars($history['image'] ?? '') ?>" alt="Zahnarztpraxis Dr. Golkhani">
         </div>
         <div class="about-text">
-            <span class="section-label">Unsere Geschichte</span>
-            <h2>Unsere Geschichte</h2>
-            <p>Unsere Zahnarztpraxis in Frechen steht seit über zwei Jahrzehnten für erstklassige zahnmedizinische Versorgung. Was als kleine Praxis begann, hat sich zu einem modernen zahnmedizinischen Zentrum entwickelt, das höchsten Ansprüchen gerecht wird.</p>
-            <p>Unter der Leitung von Dr. Bijan Golkhani M.Sc., M.Sc. legen wir größten Wert auf Transparenz, ehrliche Beratung und Behandlung auf höchstem fachlichem Niveau. Jeder Patient wird bei uns individuell und mit größtmöglicher Sorgfalt betreut.</p>
+            <span class="section-label"><?= htmlspecialchars($history['label'] ?? '') ?></span>
+            <h2><?= htmlspecialchars($history['heading'] ?? '') ?></h2>
+            <?php foreach ($history['paragraphs'] ?? [] as $p): ?>
+                <p><?= htmlspecialchars($p) ?></p>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
@@ -33,21 +44,23 @@ require 'includes/header.php';
 <section class="section section-gray">
     <div class="container doctor-inner">
         <div class="doctor-image">
-            <img src="images/about-doctor-1.jpg" alt="Dr. Bijan Golkhani">
+            <img src="<?= htmlspecialchars($doctor['image'] ?? '') ?>" alt="<?= htmlspecialchars($doctor['name'] ?? '') ?>">
         </div>
         <div class="doctor-text">
-            <span class="section-label">Chefarzt</span>
-            <h2>Dr. Bijan Golkhani M.Sc., M.Sc.</h2>
-            <p class="doctor-title">Fachzahnarzt für Parodontologie und Implantologie</p>
-            <p>Mit über <strong>20 Jahren Erfahrung in der Implantologie und Parodontologie</strong> bietet Dr. Golkhani seinen Patienten moderne, sichere und individuelle Behandlungen. Sein Ziel ist es, für jeden Patienten die <strong>beste individuelle Lösung</strong> zu finden – unter Berücksichtigung von Ästhetik, Funktion und Budget.</p>
-            <p>Sein Fachwissen und seine Kompetenz, verbunden mit einer ausgiebigen und verständlichen Beratung, schaffen ein Vertrauensverhältnis, das Patienten seit Jahrzehnten schätzen.</p>
+            <span class="section-label"><?= htmlspecialchars($doctor['label'] ?? '') ?></span>
+            <h2><?= htmlspecialchars($doctor['name'] ?? '') ?></h2>
+            <p class="doctor-title"><?= htmlspecialchars($doctor['role'] ?? '') ?></p>
+            <?php foreach ($doctor['paragraphs'] ?? [] as $p): ?>
+                <p><?= htmlspecialchars($p) ?></p>
+            <?php endforeach; ?>
             <ul class="why-list">
-                <li>✓ M.Sc. Parodontologie</li>
-                <li>✓ M.Sc. Implantologie</li>
-                <li>✓ 20+ Jahre klinische Erfahrung</li>
-                <li>✓ Spezialisiert auf komplexe Implantatversorgungen</li>
+                <?php foreach ($doctor['qualifications'] ?? [] as $q): ?>
+                    <li>✓ <?= htmlspecialchars($q) ?></li>
+                <?php endforeach; ?>
             </ul>
-            <a href="https://www.doctolib.de/zahnarzt/frechen/bijan-golkhani" class="btn btn-primary" target="_blank" rel="noopener">Termin vereinbaren</a>
+            <a href="<?= htmlspecialchars($doctor['cta']['href'] ?? '#') ?>" class="btn btn-primary" target="_blank" rel="noopener">
+                <?= htmlspecialchars($doctor['cta']['label'] ?? 'Termin vereinbaren') ?>
+            </a>
         </div>
     </div>
 </section>
@@ -56,52 +69,22 @@ require 'includes/header.php';
 <section class="section">
     <div class="container">
         <div class="section-header">
-            <span class="section-label">Team</span>
-            <h2>Unser Team</h2>
-            <p>Unser freundliches und qualifiziertes Praxisteam steht Ihnen mit Fachkompetenz, Erfahrung und Einfühlungsvermögen zur Seite. Gemeinsam sorgen wir für eine angenehme Atmosphäre und eine bestmögliche zahnmedizinische Betreuung.</p>
+            <span class="section-label"><?= htmlspecialchars($team['label'] ?? '') ?></span>
+            <h2><?= htmlspecialchars($team['heading'] ?? '') ?></h2>
+            <p><?= htmlspecialchars($team['text'] ?? '') ?></p>
         </div>
         <div class="team-grid">
-
+            <?php foreach ($team['members'] ?? [] as $m): ?>
             <div class="team-card">
                 <div class="team-img-wrap">
-                    <img src="images/IMG_1602.jpg" alt="Nadia M. Azad">
+                    <img src="<?= htmlspecialchars($m['image']) ?>" alt="<?= htmlspecialchars($m['name']) ?>">
                 </div>
                 <div class="team-body">
-                    <h3>Nadia M. Azad</h3>
-                    <p class="team-role">Dental Assistant / Administration</p>
+                    <h3><?= htmlspecialchars($m['name']) ?></h3>
+                    <p class="team-role"><?= htmlspecialchars($m['role']) ?></p>
                 </div>
             </div>
-
-            <div class="team-card">
-                <div class="team-img-wrap">
-                    <img src="images/IMG_1603.jpg" alt="Inna Halster">
-                </div>
-                <div class="team-body">
-                    <h3>Inna Halster</h3>
-                    <p class="team-role">Dental Assistant Administration</p>
-                </div>
-            </div>
-
-            <div class="team-card">
-                <div class="team-img-wrap">
-                    <img src="images/IMG_1605.jpg" alt="Carmen Oosterwijk">
-                </div>
-                <div class="team-body">
-                    <h3>Carmen Oosterwijk</h3>
-                    <p class="team-role">Dental Assistant</p>
-                </div>
-            </div>
-
-            <div class="team-card">
-                <div class="team-img-wrap">
-                    <img src="images/IMG_1608.jpg" alt="Dayla Darman">
-                </div>
-                <div class="team-body">
-                    <h3>Dayla Darman</h3>
-                    <p class="team-role">Auszubildende</p>
-                </div>
-            </div>
-
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
@@ -110,47 +93,33 @@ require 'includes/header.php';
 <section class="section section-gray">
     <div class="container">
         <div class="section-header">
-            <span class="section-label">Unsere Werte</span>
-            <h2>Unsere Werte</h2>
-            <p>Transparenz, ehrliche Beratung und Behandlung auf höchstem fachlichem Niveau – das ist unser Versprechen an jeden Patienten.</p>
+            <span class="section-label"><?= htmlspecialchars($values['label'] ?? '') ?></span>
+            <h2><?= htmlspecialchars($values['heading'] ?? '') ?></h2>
+            <p><?= htmlspecialchars($values['text'] ?? '') ?></p>
         </div>
         <div class="values-grid">
+            <?php foreach ($values['items'] ?? [] as $v): ?>
             <div class="value-card">
-                <div class="value-icon">🏆</div>
-                <h3>Qualität</h3>
-                <p>Wir setzen ausschließlich auf hochwertige Materialien und modernste Behandlungsmethoden, um dauerhaft beste Ergebnisse zu erzielen.</p>
+                <div class="value-icon"><?= $v['icon'] ?></div>
+                <h3><?= htmlspecialchars($v['title']) ?></h3>
+                <p><?= htmlspecialchars($v['text']) ?></p>
             </div>
-            <div class="value-card">
-                <div class="value-icon">🤝</div>
-                <h3>Vertrauen</h3>
-                <p>Ehrliche Beratung und transparente Kommunikation sind die Grundlage unserer langjährigen Patientenbeziehungen.</p>
-            </div>
-            <div class="value-card">
-                <div class="value-icon">💡</div>
-                <h3>Innovation</h3>
-                <p>Unsere modern ausgestattete Praxis nutzt die neuesten Technologien für präzise Diagnosen und schonende Behandlungen.</p>
-            </div>
-            <div class="value-card">
-                <div class="value-icon">❤️</div>
-                <h3>Einfühlsamkeit</h3>
-                <p>Wir nehmen uns Zeit für Ihre Anliegen und begleiten Sie mit Geduld und Verständnis durch jede Behandlung.</p>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
 
-<!-- ===== PRAXISBILDER ===== -->
+<!-- ===== GALERIE ===== -->
 <section class="section">
     <div class="container">
         <div class="section-header">
-            <span class="section-label">Unsere Praxis</span>
-            <h2>Moderne Zahnmedizin in angenehmer Atmosphäre</h2>
+            <span class="section-label"><?= htmlspecialchars($gallery['label'] ?? '') ?></span>
+            <h2><?= htmlspecialchars($gallery['heading'] ?? '') ?></h2>
         </div>
         <div class="gallery-grid">
-            <img src="images/IMG_9027-scaled.jpg"  alt="Praxis Dr. Golkhani" class="gallery-img">
-            <img src="images/IMG_9054.jpg"          alt="Behandlungsraum"     class="gallery-img">
-            <img src="images/IMG_9124-scaled.jpg"   alt="Empfang"             class="gallery-img">
-            <img src="images/IMG_9281-scaled.jpg"   alt="Wartebereich"        class="gallery-img">
+            <?php foreach ($gallery['images'] ?? [] as $img): ?>
+                <img src="<?= htmlspecialchars($img['src']) ?>" alt="<?= htmlspecialchars($img['alt']) ?>" class="gallery-img">
+            <?php endforeach; ?>
         </div>
     </div>
 </section>

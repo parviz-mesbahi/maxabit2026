@@ -1,7 +1,18 @@
 <?php
-$pageTitle = 'Kontakt – Zahnarztpraxis Dr. Golkhani, Frechen';
-$pageDesc  = 'Zahnarztpraxis Dr. Bijan Golkhani – Hauptstraße 124-126, 50226 Frechen. Tel: 02234 16 666. Jetzt Termin vereinbaren.';
+require 'includes/load_content.php';
+$c = load_content('contact');
+
+$pageTitle = $c['meta']['title']       ?? 'Kontakt – Dr. Golkhani';
+$pageDesc  = $c['meta']['description'] ?? '';
 require 'includes/header.php';
+
+$hero    = $c['hero']           ?? [];
+$form    = $c['form']           ?? [];
+$info    = $c['contact_info']   ?? [];
+$hours   = $c['hours']          ?? [];
+$emerg   = $c['emergency']      ?? [];
+$map     = $c['map']            ?? [];
+$booking = $c['online_booking'] ?? [];
 
 $success = false;
 $errors  = [];
@@ -12,12 +23,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $phone   = trim($_POST['phone']   ?? '');
     $message = trim($_POST['message'] ?? '');
 
-    if (!$name)                       $errors[] = 'Bitte geben Sie Ihren Namen ein.';
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) $errors[] = 'Bitte geben Sie eine gültige E-Mail-Adresse ein.';
-    if (!$message)                    $errors[] = 'Bitte geben Sie eine Nachricht ein.';
+    if (!$name)                                        $errors[] = 'Bitte geben Sie Ihren Namen ein.';
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL))    $errors[] = 'Bitte geben Sie eine gültige E-Mail-Adresse ein.';
+    if (!$message)                                     $errors[] = 'Bitte geben Sie eine Nachricht ein.';
 
     if (empty($errors)) {
-        $to      = 'dr.bijan.golkhani@gmx.de';
+        $to      = $form['recipient'] ?? 'dr.bijan.golkhani@gmx.de';
         $subject = 'Kontaktanfrage von ' . $name;
         $body    = "Name: $name\nE-Mail: $email\nTelefon: $phone\n\nNachricht:\n$message";
         $headers = "From: noreply@zahnarzt-golkhani.de\r\nReply-To: $email";
@@ -30,9 +41,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!-- ===== PAGE HERO ===== -->
 <section class="page-hero">
     <div class="container">
-        <span class="section-label">Kontakt</span>
-        <h1>Wir sind für Sie da</h1>
-        <p>Vereinbaren Sie Ihren Termin – online, telefonisch oder per E-Mail. Wir freuen uns auf Ihren Besuch.</p>
+        <span class="section-label"><?= htmlspecialchars($hero['label'] ?? '') ?></span>
+        <h1><?= htmlspecialchars($hero['heading'] ?? '') ?></h1>
+        <p><?= htmlspecialchars($hero['text'] ?? '') ?></p>
     </div>
     <img src="images/bg-graphic-2.svg" alt="" class="page-hero-bg" aria-hidden="true">
 </section>
@@ -41,14 +52,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <section class="section">
     <div class="container contact-grid">
 
-        <!-- KONTAKTFORMULAR -->
+        <!-- FORMULAR -->
         <div class="contact-form-wrap">
-            <h2>Nachricht senden</h2>
-            <p class="contact-form-sub">Wir melden uns schnellstmöglich bei Ihnen.</p>
+            <h2><?= htmlspecialchars($form['heading'] ?? '') ?></h2>
+            <p class="contact-form-sub"><?= htmlspecialchars($form['subheading'] ?? '') ?></p>
 
             <?php if ($success): ?>
                 <div class="form-success">
-                    <strong>Vielen Dank!</strong> Ihre Nachricht wurde erfolgreich übermittelt. Wir werden uns zeitnah bei Ihnen melden.
+                    <strong>Vielen Dank!</strong> <?= htmlspecialchars($form['success_message'] ?? '') ?>
                 </div>
             <?php endif; ?>
 
@@ -61,28 +72,39 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <?php endif; ?>
 
             <form method="post" action="contact.php" class="contact-form" novalidate>
+                <?php
+                $fields = $form['fields'] ?? [];
+                $row_open = false;
+                foreach ($fields as $idx => $field):
+                    $next = $fields[$idx + 1] ?? null;
+                    $prev = $fields[$idx - 1] ?? null;
+
+                    // group email + phone in a row
+                    if ($field['name'] === 'email' && $next && $next['name'] === 'phone'):
+                        echo '<div class="form-row">';
+                        $row_open = true;
+                    endif;
+                ?>
                 <div class="form-group">
-                    <label for="name">Name *</label>
-                    <input type="text" id="name" name="name" placeholder="Ihr vollständiger Name"
-                           value="<?= htmlspecialchars($_POST['name'] ?? '') ?>" required>
+                    <label for="<?= $field['name'] ?>"><?= htmlspecialchars($field['label']) ?><?= $field['required'] ? ' *' : '' ?></label>
+                    <?php if ($field['type'] === 'textarea'): ?>
+                        <textarea id="<?= $field['name'] ?>" name="<?= $field['name'] ?>" rows="5"
+                                  placeholder="<?= htmlspecialchars($field['placeholder']) ?>"
+                                  <?= $field['required'] ? 'required' : '' ?>><?= htmlspecialchars($_POST[$field['name']] ?? '') ?></textarea>
+                    <?php else: ?>
+                        <input type="<?= $field['type'] ?>" id="<?= $field['name'] ?>" name="<?= $field['name'] ?>"
+                               placeholder="<?= htmlspecialchars($field['placeholder']) ?>"
+                               value="<?= htmlspecialchars($_POST[$field['name']] ?? '') ?>"
+                               <?= $field['required'] ? 'required' : '' ?>>
+                    <?php endif; ?>
                 </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="email">E-Mail *</label>
-                        <input type="email" id="email" name="email" placeholder="ihre@email.de"
-                               value="<?= htmlspecialchars($_POST['email'] ?? '') ?>" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Telefon</label>
-                        <input type="tel" id="phone" name="phone" placeholder="0 2234 ..."
-                               value="<?= htmlspecialchars($_POST['phone'] ?? '') ?>">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="message">Nachricht *</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Wie können wir Ihnen helfen?" required><?= htmlspecialchars($_POST['message'] ?? '') ?></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Nachricht absenden</button>
+                <?php
+                    if ($field['name'] === 'phone' && $prev && $prev['name'] === 'email'):
+                        echo '</div>';
+                        $row_open = false;
+                    endif;
+                endforeach; ?>
+                <button type="submit" class="btn btn-primary"><?= htmlspecialchars($form['submit_label'] ?? 'Absenden') ?></button>
             </form>
         </div>
 
@@ -91,33 +113,36 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="contact-info-card">
                 <div class="contact-info-icon">📍</div>
                 <h3>Adresse</h3>
-                <p>Hauptstraße 124-126<br>50226 Frechen</p>
+                <p><?= htmlspecialchars($info['address']['street'] ?? '') ?><br>
+                   <?= htmlspecialchars($info['address']['city'] ?? '') ?></p>
             </div>
             <div class="contact-info-card">
                 <div class="contact-info-icon">📞</div>
                 <h3>Telefon</h3>
-                <p><a href="tel:+4922341666">02234 16 666</a></p>
+                <p><a href="<?= htmlspecialchars($info['phone_href'] ?? '#') ?>"><?= htmlspecialchars($info['phone'] ?? '') ?></a></p>
             </div>
             <div class="contact-info-card">
                 <div class="contact-info-icon">✉️</div>
                 <h3>E-Mail</h3>
-                <p><a href="mailto:dr.bijan.golkhani@gmx.de">dr.bijan.golkhani@gmx.de</a></p>
+                <p><a href="mailto:<?= htmlspecialchars($info['email'] ?? '') ?>"><?= htmlspecialchars($info['email'] ?? '') ?></a></p>
             </div>
             <div class="contact-info-card">
                 <div class="contact-info-icon">🕐</div>
                 <h3>Öffnungszeiten</h3>
                 <table class="hours-table">
-                    <tr><td>Mo – Do</td><td>8:30 – 12:30 &amp; 15:00 – 19:00</td></tr>
-                    <tr><td>Mi-Nachmittag</td><td>Nur nach Vereinbarung</td></tr>
-                    <tr><td>Freitag</td><td>08:30 – 13:30</td></tr>
-                    <tr><td>Sa &amp; So</td><td>Geschlossen</td></tr>
+                    <?php foreach ($hours as $h): ?>
+                    <tr>
+                        <td><?= htmlspecialchars($h['days']) ?></td>
+                        <td><?= htmlspecialchars($h['time']) ?></td>
+                    </tr>
+                    <?php endforeach; ?>
                 </table>
             </div>
             <div class="contact-info-card contact-emergency">
                 <div class="contact-info-icon">🚨</div>
-                <h3>Notfalldienst</h3>
-                <p>Zentrale Rufnummer der nordrheinischen Zahnärzte:</p>
-                <p><strong><a href="tel:018059867000">01805 / 98 67 00</a></strong></p>
+                <h3><?= htmlspecialchars($emerg['label'] ?? '') ?></h3>
+                <p><?= htmlspecialchars($emerg['text'] ?? '') ?></p>
+                <p><strong><a href="<?= htmlspecialchars($emerg['phone_href'] ?? '#') ?>"><?= htmlspecialchars($emerg['phone'] ?? '') ?></a></strong></p>
             </div>
         </div>
 
@@ -125,27 +150,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </section>
 
 <!-- ===== KARTE ===== -->
+<?php if (!empty($map['embed_url'])): ?>
 <section class="map-section">
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2512.5!2d6.8150!3d50.9285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf25c0e1a2b2c3%3A0x0!2sHauptstra%C3%9Fe+124-126%2C+50226+Frechen!5e0!3m2!1sde!2sde!4v1"
-        width="100%"
-        height="450"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="Standort Zahnarztpraxis Dr. Golkhani, Frechen">
-    </iframe>
+    <iframe src="<?= htmlspecialchars($map['embed_url']) ?>"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="<?= htmlspecialchars($map['label'] ?? 'Standort') ?>"></iframe>
 </section>
+<?php endif; ?>
 
-<!-- ===== DOCTOLIB CTA ===== -->
+<!-- ===== ONLINE BOOKING CTA ===== -->
 <section class="section section-gray">
     <div class="container" style="text-align:center">
-        <span class="section-label">Online buchen</span>
-        <h2>Einfach online Termin buchen</h2>
-        <p style="color:var(--muted);margin:16px auto 32px;max-width:520px">Vereinbaren Sie Ihren Termin ganz einfach online über Doctolib – schnell, unkompliziert und rund um die Uhr.</p>
-        <a href="https://www.doctolib.de/zahnarzt/frechen/bijan-golkhani" class="btn btn-primary" target="_blank" rel="noopener">
-            Jetzt Termin buchen
+        <span class="section-label"><?= htmlspecialchars($booking['label'] ?? '') ?></span>
+        <h2><?= htmlspecialchars($booking['heading'] ?? '') ?></h2>
+        <p style="color:var(--muted);margin:16px auto 32px;max-width:520px"><?= htmlspecialchars($booking['text'] ?? '') ?></p>
+        <a href="<?= htmlspecialchars($booking['cta']['href'] ?? '#') ?>" class="btn btn-primary" target="_blank" rel="noopener">
+            <?= htmlspecialchars($booking['cta']['label'] ?? 'Jetzt buchen') ?>
         </a>
     </div>
 </section>
